@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Gutierrez | Portfólio</title>
+   <link rel="stylesheet" href="./css/styles.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <nav class="navegacao">
+      <ul class="menu">
+         <li>
+            <a href="#inicio" class="menu-link">Inicio</a>
+         </li>
+         <li>
+            <a href="#sobre" class="menu-link">Sobre</a>
+         </li>
+         <li>
+            <a href="#projetos" class="menu-link">Projetos</a>
+         </li>
+         <li>
+            <a href="#contatos" class="menu-link">Contatos</a>
+         </li>
+      </ul>
+   </nav>
+
+   <main id="inicio" class="cabecalho">
+      <!-- conteudo principal -->
+         <img src="./images/arthur.png" alt="Arthur Gutierrez" class="foto-perfil"/>
+         <h1>Arthur Gutierrez</h1>
+         <p class="cabecalho-sub-titulo">Desenvolvedor Front-end</p>
+   </main>
+
+   <section id="sobre" class="sobre">
+      <h2 class="sobre-titulo">Sobre mim</h2>
+      <div class="sobre-caixa">
+         <p class="sobre-paragrafo">
+            Olá! Sou um desenvolvedor front-end focado em criar interfaces
+            modernas, funcionais e impactantes. Com domínio em React, TypeScript,
+            Tailwind e outras tecnologias web, entrego soluções que unem
+            performance e design. Transformo ideias em sites que impressionam,
+            resolvem problemas e geram resultados.
+         </p>
+      </div>
+   </section>
+
+   <section id="projetos" class="projetos">
+      <h2 class="projetos-titulo">Meus Projetos</h2>
+      <div class="projetos-caixa">
+         <div class="projetos-card">
+            <img src="./images/projeto1.png" alt="Projeto Loja de Carros" class="projetos-imagem" />
+            <div class="caixa-textos-projetos">
+               <h3 class="info-projetos">Loja de Carros</h3>
+               <p class="paragrafo-projetos">
+                  Loja virtual moderna com animações suaves e design responsivo para
+                  uma loja de carros de luxo.
+               </p>
+            </div>
+         </div>
+         <div class="projetos-card">
+            <img src="./images/projeto2.png" alt="Projeto Viagens" class="projetos-imagem" />
+            <div class="caixa-textos-projetos">
+               <h3 class="info-projetos">Pagina de Viagens</h3>
+               <p class="paragrafo-projetos">
+                  Uma pagina interativa com roteiros de viagem mais cobicados do
+                  mundo.
+               </p>
+            </div>
+         </div>
+         <div class="projetos-card">
+            <img src="./images/projeto3.png" alt="Projeto Microsoft" class="projetos-imagem" />
+            <div class="caixa-textos-projetos">
+               <h3 class="info-projetos">Microsoft</h3>
+               <p class="paragrafo-projetos">
+                  Pagina da Microsoft com informações sobre os produtos e serviços
+                  oferecidos.
+               </p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section id="contatos" class="contatos">
+      <h2 class="contatos-titulo">Entre em Contato</h2>
+      <form id="formulario" class="formulario-contato">
+         <div class="nome-form">
+            <input placeholder="Nome" class="campo-form">
+         </div>
+         <div class="grupo-form">
+            <textarea class="text-form" placeholder="Digite sua mensagem"></textarea>
+         </div>
+      </form>
+</body>
+
+</html>
