@@ -11,7 +11,7 @@ function enviarWhats(event) {
   const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
 
   const menuLinks = document.querySelectorAll(".menu-link");
-  const nav = document.querySelector(".navegacao");
+  const nav = document.querySelector(".nav");
 
   menuLinks.forEach((link, index) => {
     link.addEventListener("mouseenter", () => {
@@ -35,6 +35,13 @@ function enviarWhats(event) {
 }
 
 window.addEventListener("scroll", function () {
-  var header = document.querySelector("#header");
+  var header = document.querySelector(".header");
   header.classList.toggle("rolagem", window.scrollY > 0);
 });
+
+
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector(".nav");
+
+hamburger.addEventListener("click", () => 
+  nav.classList.toggle("active"));
