@@ -14,7 +14,7 @@ html {
 :root {
   --primaria: #4f46e5;
   --secundaria: #7c3aed;
-  --escuro: #0f172a;
+  --escuro: #1d1d1d;
   --maisEscuro: #0a0f1c;
   --claro: #e2e8f0;
   --vidro: rgba(255, 255, 255, 0.1);
@@ -237,7 +237,7 @@ h1 {
   box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
 }
 
-.particulas {
+/* .particulas {
   position: fixed;
   top: 0;
   left: 0;
@@ -245,13 +245,43 @@ h1 {
   height: 100%;
   z-index: -1;
   opacity: 0.5;
-  background: radial-gradient(
-      circle at 10% 20%,
-      var(--primaria) 0%,
-      transparent 20%
-    ),
-    radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%),
-    var(--maisEscuro);
+  /* background: radial-gradient(circle at 10% 20%, #20646d 0%, transparent 25%),
+    radial-gradient(circle at 90% 80%, #044d71 0%, transparent 25%),
+    var(--maisEscuro); */
+*/
+
+.particulas {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: var(--maisEscuro);
+  overflow: hidden;
+}
+
+.particulas::before {
+  content: "";
+  position: absolute;
+  top: 14%;
+  left: 10%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #1436b457 0%, transparent 70%);
+  border-radius: 50%;
+  animation: pulsar 10s infinite ease-in-out;
+  opacity: 0.7;
+}
+
+.particulas::after {
+  content: "";
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #660fb786 0%, transparent 70%);
+  border-radius: 50%;
+  animation: pulsar 7s infinite ease-in-out;
+  opacity: 0.7;
 }
 
 .rede-social {
@@ -331,5 +361,20 @@ header.rolagem {
   }
   50% {
     transform: translateY(-20px);
+  }
+}
+
+@keyframes pulsar {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.3;
   }
 }
