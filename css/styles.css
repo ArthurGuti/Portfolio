@@ -14,7 +14,7 @@ html {
 :root {
   --primaria: #4663e5;
   --secundaria: #3a88ed;
-  --escuro: #1d1d1d;
+  --escuro: #1f2b4a;
   --maisEscuro: #0a0f1c;
   --claro: #e2e8f0;
   --vidro: rgba(255, 255, 255, 0.1);
@@ -231,7 +231,8 @@ h1 {
   /* background: radial-gradient(circle at 10% 20%, #20646d 0%, transparent 25%),
     radial-gradient(circle at 90% 80%, #044d71 0%, transparent 25%),
     var(--maisEscuro); */
-*/ .particulas {
+
+.particulas {
   position: fixed;
   inset: 0;
   z-index: -1;
@@ -466,10 +467,9 @@ h1 {
 }
 
 .header.rolagem {
-  background: #212020a7;
+  background: #0a1329a1;
   backdrop-filter: blur(10px);
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+ box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 
 @keyframes flutuar {
