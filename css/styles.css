@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  background-color: var(--escuro);
+  background-color: var(--maisEscuro);
   color: var(--claro);
 }
 
@@ -86,6 +86,8 @@ h1 {
 }
 
 .sobre {
+  overflow: hidden;
+  position: relative;
   padding: 6rem 2rem;
 }
 
@@ -165,6 +167,8 @@ h1 {
 
 .contatos {
   padding: 6rem 2rem;
+  overflow: hidden;
+  position: relative;
 }
 
 .contatos-titulo {
@@ -232,13 +236,13 @@ h1 {
     radial-gradient(circle at 90% 80%, #044d71 0%, transparent 25%),
     var(--maisEscuro); */
 
-.particulas {
+/* .particulas {
   position: fixed;
   inset: 0;
   z-index: -1;
   background: var(--maisEscuro);
   overflow: hidden;
-}
+} */
 
 .particulas::before {
   content: "";
@@ -249,7 +253,7 @@ h1 {
   height: 300px;
   background: radial-gradient(circle, #1436b457 0%, transparent 70%);
   border-radius: 50%;
-  animation: pulsar 10s infinite ease-in-out;
+  animation: pulsar 11s infinite ease-in-out;
   opacity: 0.7;
 }
 
@@ -257,6 +261,57 @@ h1 {
   content: "";
   position: absolute;
   bottom: 10%;
+  right: 5%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #660fb786 0%, transparent 70%);
+  border-radius: 50%;
+  animation: pulsar 7s infinite ease-in-out;
+  opacity: 0.7;
+}
+.particulas2::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, #a114b457 0%, transparent 70%);
+  border-radius: 50%;
+  animation: pulsar 7s infinite ease-in-out;
+  opacity: 0.7;
+}
+
+.particulas2::after {
+  content: "";
+  position: absolute;
+  bottom: 4%;
+  right: 5%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, #0f77b786 0%, transparent 70%);
+  border-radius: 50%;
+  animation: pulsar 11s infinite ease-in-out;
+  opacity: 0.7;
+}
+
+.particulas3::before {
+  content: "";
+  position: absolute;
+  top: 12%;
+  left: 10%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #1436b457 0%, transparent 70%);
+  border-radius: 50%;
+  animation: pulsar 11s infinite ease-in-out;
+  opacity: 0.7;
+}
+
+.particulas3::after {
+  content: "";
+  position: absolute;
+  bottom: 5%;
   right: 5%;
   width: 300px;
   height: 300px;
@@ -467,9 +522,11 @@ h1 {
 }
 
 .header.rolagem {
-  background: #0a1329a1;
+  /* background: #0a1329a1; */
+  background: rgba(10, 19, 41, 0.5);
   backdrop-filter: blur(10px);
- box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  -webkit-backdrop-filter: blur(10px); /* ESSENCIAL pro suporte mobile */
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 
 @keyframes flutuar {
@@ -484,7 +541,7 @@ h1 {
 
 @keyframes pulsar {
   0% {
-    transform: scale(0.8);
+    transform: scale(0.3);
     opacity: 0.3;
   }
   50% {
@@ -492,7 +549,7 @@ h1 {
     opacity: 0.6;
   }
   100% {
-    transform: scale(0.8);
+    transform: scale(0.3);
     opacity: 0.3;
   }
 }
