@@ -404,6 +404,7 @@ h1 {
 .logo {
   font-size: 35px;
   text-decoration: none;
+  color: var(--claro);
 }
 
 .nav-list {
