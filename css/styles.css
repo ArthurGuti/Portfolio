@@ -18,6 +18,10 @@ html {
   --maisEscuro: #0a0f1c;
   --claro: #e2e8f0;
   --vidro: rgba(255, 255, 255, 0.1);
+  --color-neutral-0: #0e0c0c;
+  --color-neutral-10: #171717;
+  --color-neutral-30: #a8a29e;
+  --color-neutral-40: #f5f5f5;
 }
 
 body {
@@ -73,11 +77,13 @@ body {
   animation: flutuar 4s ease-in-out infinite;
 }
 
-h1 {
+.cabecalho h1 {
   font-size: 3.5rem;
   color: var(--primaria);
   font-weight: bold;
   margin: 15px;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .cabecalho-sub-titulo {
@@ -534,6 +540,131 @@ h1 {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* ESSENCIAL pro suporte mobile */
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+footer {
+  width: 100%;
+  color: var(--color-neutral-40);
+}
+
+#footer_content {
+  background: rgba(10, 19, 41, 0.714);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 3rem 4rem;
+  text-align: center;
+}
+
+.logo-footer {
+  margin-bottom: 0.75rem;
+}
+
+#footer_social_med {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.footer-list .footer-link {
+  color: var(--color-neutral-30);
+  text-decoration: none;
+  transition: all 0.4s;
+
+  &:hover {
+    color: var(--primaria);
+  }
+}
+
+#footer_subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#footer_subscribe p {
+  color: var(--color-neutral-30);
+}
+
+#input_group {
+  display: flex;
+  align-items: center;
+  background-color: var(--maisEscuro);
+  border-radius: 4px;
+}
+
+#input_group input {
+  all: unset;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+#input_group button {
+  background-color: var(--primaria);
+  border: none;
+  color: var(--color-neutral-40);
+  padding: 0px 1.25rem;
+  font-size: 1.125rem;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+  transition: all 0.4s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+#footer_copyright {
+  display: flex;
+  justify-content: center;
+  background-color: var(--maisEscuro);
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+  #footer_content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #footer_content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
+  }
+
+  .contatos {
+    padding: 0;
+  }
+
+  .formulario-contato {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    padding: 1rem;
+    border: 0;
+    border-radius: 0;
+    padding-bottom: 5rem;
+  }
+
+  .projetos {
+    padding: 6rem 1rem;
+  }
+
+  .sobre {
+    padding: 6rem 1rem;
+  }
 }
 
 @keyframes flutuar {
