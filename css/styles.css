@@ -12,7 +12,7 @@ html {
 
 /* Raiz CSS */
 :root {
- --primaria: #e67e22; /* Laranja queimado - destaque caloroso e marcante */
+  --primaria: #e67e22; /* Laranja queimado - destaque caloroso e marcante */
   --secundaria: #f39c12; /* Laranja dourado - complementa e dá energia */
   --escuro: #1b1f24; /* Fundo escuro suave para leitura */
   --maisEscuro: #0a0d10; /* Preto azulado profundo */
@@ -263,7 +263,7 @@ body {
   left: 10%;
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, #f39d1250 0%, transparent 70%);
+  background: radial-gradient(circle, #f79b0850 0%, transparent 70%);
   border-radius: 50%;
   animation: pulsar 11s infinite ease-in-out;
   opacity: 0.7;
@@ -276,7 +276,7 @@ body {
   right: 5%;
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, #edca2b5b 0%, transparent 70%);
+  background: radial-gradient(circle, #f3c9105b 0%, transparent 70%);
   border-radius: 50%;
   animation: pulsar 7s infinite ease-in-out;
   opacity: 0.7;
@@ -288,7 +288,11 @@ body {
   left: 10%;
   width: 200px;
   height: 200px;
-  background: radial-gradient(circle, #f3d3049f 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(212, 186, 18, 0.418) 0%,
+    transparent 70%
+  );
   border-radius: 50%;
   animation: pulsar 7s infinite ease-in-out;
   opacity: 0.7;
@@ -301,7 +305,7 @@ body {
   right: 5%;
   width: 200px;
   height: 200px;
-  background: radial-gradient(circle, #0f77b786 0%, transparent 70%);
+  background: radial-gradient(circle, #ca7e036f 0%, transparent 70%);
   border-radius: 50%;
   animation: pulsar 11s infinite ease-in-out;
   opacity: 0.7;
@@ -314,7 +318,7 @@ body {
   left: 10%;
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, #1436b457 0%, transparent 70%);
+  background: radial-gradient(circle, #f3c9105b 0%, transparent 70%);
   border-radius: 50%;
   animation: pulsar 11s infinite ease-in-out;
   opacity: 0.7;
@@ -327,7 +331,7 @@ body {
   right: 5%;
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, #660fb786 0%, transparent 70%);
+  background: radial-gradient(circle, #ca7e036f 0%, transparent 70%);
   border-radius: 50%;
   animation: pulsar 7s infinite ease-in-out;
   opacity: 0.7;
@@ -398,7 +402,8 @@ body {
 } */
 
 .nav {
-  max-width: 1280px;
+  /* max-width: 1280px; */
+  max-width: 80rem;
   height: 70px;
   margin-inline: auto;
 
@@ -537,27 +542,46 @@ body {
   width: 100%;
   z-index: 100;
   top: 0;
+  left: 0px;
+  right: 0px;
 }
 
 .header.rolagem {
-  /* background: #0a1329a1; */
   background: #1b1f245f;
   backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px); /* ESSENCIAL pro suporte mobile */
+  -webkit-backdrop-filter: blur(14px); /* ESSENCIAL pro suporte apple */
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 
+.container-header {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 footer {
-  width: 100%;
-  color: var(--color-neutral-40);
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background: #1b1f248f;
 }
 
 #footer_content {
-  background: rgba(10, 19, 41, 0.714);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 3rem 4rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  color: rgb(255 255 255 / 0.6);
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
+}
+
+.footer-container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .logo-footer {
@@ -573,9 +597,9 @@ footer {
 
 .footer-list {
   display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  gap: 1.5rem;
   list-style: none;
+  align-items: center;
 }
 
 .footer-list .footer-link {
@@ -629,10 +653,8 @@ footer {
 #footer_copyright {
   display: flex;
   justify-content: center;
-  background-color: var(--maisEscuro);
-  font-size: 0.9rem;
-  padding: 1.5rem;
-  font-weight: 100;
+  font-size: 0.875rem;
+  font-weight: 400;
 }
 
 .grid-programing {
@@ -642,8 +664,14 @@ footer {
 
 @media screen and (max-width: 768px) {
   #footer_content {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
+  }
+}
+
+@media (min-width: 640px) {
+  #footer_content {
+    flex-direction: row;
   }
 }
 
