@@ -404,16 +404,46 @@ body {
 .nav {
   /* max-width: 1280px; */
   max-width: 80rem;
-  height: 70px;
-  margin-inline: auto;
+  /* height: 70px; */
+  /* margin-inline: auto; */
+  font-size: 0.875rem;
+  /* line-height: 1.25rem; */
+  gap: 1.5rem;
 
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
 }
 
+.span-header {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 2.75rem;
+}
+
+.svg-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.svg-header {
+  --tw-shadow: 0 10px 30px rgba(15, 127, 229, 0.15);
+  --tw-shadow-colored: 0 10px 30px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  border-radius: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-flex;
+}
+
 .logo {
   font-size: 35px;
+  gap: 0.75rem;
+  text-align: center;
+  display: flex;
   text-decoration: none;
   color: var(--claro);
 }
@@ -455,6 +485,10 @@ body {
     z-index: 2;
   }
 
+  .span-header {
+    display: none;
+  }
+
   .grid-sobre {
     grid-template-columns: 1fr !important;
     gap: 0rem !important;
@@ -473,23 +507,20 @@ body {
     opacity: 0;
   }
 
-  .nav {
-    padding-inline: 1rem;
-  }
-
   .nav-list {
     will-change: clip-path, opacity;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: #2a3164b7;
-    clip-path: circle(100px at 90% -15%);
-    transition: 1s ease-out;
+    right: 0;
+    border-radius: 0.75rem;
+    width: 50vw;
+    height: 50vh;
+    background: #e896207a;
+    clip-path: circle(100px at 90% -33%);
+    transition: 0.7s ease-out;
 
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     gap: 0;
     pointer-events: none;
@@ -546,16 +577,37 @@ body {
   right: 0px;
 }
 
-.header.rolagem {
-  background: #1b1f245f;
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px); /* ESSENCIAL pro suporte apple */
+.container-menu-nav {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.container-nav.rolagem {
+  background: #545a6140;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  transition: 0.2s all ;
 }
 
 .container-header {
   padding-left: 1rem;
   padding-right: 1rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-nav {
+  border-radius: 1rem;
+  margin-top: 1rem; 
+  backdrop-filter: blur(0px);
+  transition: 0.2s all ;
 }
 
 footer {
@@ -667,11 +719,19 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
   }
+
+  .cabecalho {
+    margin-top: 1em;
+  }
 }
 
 @media (min-width: 640px) {
   #footer_content {
     flex-direction: row;
+  }
+
+  .nav {
+    display: flex;
   }
 }
 

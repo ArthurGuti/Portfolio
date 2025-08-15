@@ -35,7 +35,7 @@ function enviarWhats(event) {
 }
 
 window.addEventListener("scroll", function () {
-  var header = document.querySelector(".header");
+  var header = document.querySelector(".container-nav");
   header.classList.toggle("rolagem", window.scrollY > 0);
 });
 
