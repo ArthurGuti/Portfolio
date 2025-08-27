@@ -12,8 +12,8 @@ html {
 
 /* Raiz CSS */
 :root {
-  --primaria: #7e00f5;
-  --secundaria: #6900cc;
+  --primaria: #006EF5;
+  --secundaria: #0047CC;
   --escuro: #1b1f24;
   --maisEscuro: #0a0d10;
   --claro: #ecf0f1;
@@ -101,7 +101,6 @@ body {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-
 }
 
 .foto-perfil {
@@ -120,10 +119,9 @@ body {
   border-radius: 15px;
   min-height: calc(100% - 80px);
   max-width: 28rem;
-   backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.05);
 }
-
 
 .cabecalho h5 {
   font-size: 25px;
@@ -486,8 +484,9 @@ body {
 }
 
 .svg-header {
-  --tw-shadow: 0 10px 30px rgba(15, 127, 229, 0.15);
-  --tw-shadow-colored: 0 10px 30px var(--tw-shadow-color);
+  /* --tw-shadow: 0 10px 30px rgba(15, 127, 229, 0.15); */
+  /* --tw-shadow-colored: 0 10px 30px var(--tw-shadow-color); */
+  background: #0273f8;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   border-radius: 0.75rem;
@@ -796,8 +795,6 @@ footer {
   #footer_content {
     flex-direction: row;
   }
-
-  
 
   .nav {
     display: flex;
