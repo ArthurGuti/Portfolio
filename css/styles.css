@@ -403,7 +403,7 @@ body {
   line-height: 40px;
   font-size: 18px;
   display: block;
-  border-radius: 50%;
+  border-radius: 15%;
   position: relative;
   overflow: hidden;
   border: 2px solid var(--vidro);
@@ -486,14 +486,14 @@ body {
 .svg-header {
   /* --tw-shadow: 0 10px 30px rgba(15, 127, 229, 0.15); */
   /* --tw-shadow-colored: 0 10px 30px var(--tw-shadow-color); */
-  background: #0273f8;
+  /* background: var(--color-neutral-0); */
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   border-radius: 0.75rem;
   justify-content: center;
   align-items: center;
   width: 2.5rem;
-  height: 2.5rem;
+  /* height: 2.5rem; */
   display: inline-flex;
 }
 
