@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gutierrez | Portfólio</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="images/Logo Arthur Gutierrez (ofc svg).svg"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -57,47 +62,92 @@
 
     <main id="inicio" class="cabecalho">
       <div class="particulas"></div>
+      <div class="sobre-flex">
+        <div class="border-main">
+          <div class="full-width">
+            <img
+              src="./images/arthur.png"
+              alt="Arthur Gutierrez"
+              class="foto-perfil"
+            />
 
-      <div class="border-main">
-        <div class="full-width">
-          <img
-            src="./images/arthur.png"
-            alt="Arthur Gutierrez"
-            class="foto-perfil"
-          />
+            <h5>Arthur Gutierrez</h5>
+            <p class="cabecalho-sub-titulo">Desenvolvedor de Software</p>
+            <ul class="menu-rede-social">
+              <li>
+                <a href="#contatos" class="rede-social whatsapp"
+                  ><i class="fab fa-whatsapp icon"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/ArthurGuti"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="rede-social github"
+                  ><i class="fab fa-github icon"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/arthur-gutierrez-de-oliveira-dev2110"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="rede-social linkedin"
+                  ><i class="fab fa-linkedin-in icon"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-          <h5>Arthur Gutierrez</h5>
-          <p class="cabecalho-sub-titulo">Desenvolvedor de Software</p>
-          <ul class="menu-rede-social">
-            <li>
-              <a href="#contatos" class="rede-social whatsapp"
-                ><i class="fab fa-whatsapp icon"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/ArthurGuti"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="rede-social github"
-                ><i class="fab fa-github icon"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/arthur-gutierrez-de-oliveira-dev2110"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="rede-social linkedin"
-                ><i class="fab fa-linkedin-in icon"></i
-              ></a>
-            </li>
+        <div class="sobre-caixa">
+          <h2 class="sobre-titulo">
+            Olá eu sou <id class="sobre-nome">Arthur Gutierrez</id>
+          </h2>
+          <p class="sobre-paragrafo">
+            Sou um <b>desenvolvedor</b> front-end dedicado a criar interfaces
+            modernas, funcionais e impactantes,
+            <b>transformando ideias em experiências digitais</b> que unem design
+            e performance. Trabalho com
+            <b>React, TypeScript, Tailwind, etec...</b>, explorando as melhores
+            práticas para construir aplicações responsivas, acessíveis e
+            escaláveis. Tenho experiência em estruturar design systems. Também
+            aplico princípios de <b>SEO</b> técnico e otimização de performance.
+            Minha abordagem é sempre centrada no usuário, buscando
+            <b>criar interfaces que realmente resolvem problemas</b>
+            e entregam fluidez em qualquer dispositivo. Meu objetivo é
+            desenvolver
+            <b>projetos que impressionam, geram resultados e ajudam empresas</b>
+            a se destacarem no mundo digital.
+          </p>
+
+          <ul class="sobre-info">
+            <li><span>Nome:</span> Arthur Gutierrez de Oliveira</li>
+            <li><span>Idade:</span> 18 anos</li>
+            <li><span>Cidade:</span> Santa Fé do Sul</li>
           </ul>
+
+          <div class="sobre-stats">
+            <div class="stat">
+              <span class="stat-num">03</span>
+              <span class="stat-text">Anos de<br />Experiência</span>
+            </div>
+            <div class="stat-btn">
+              <a
+                href="images/Curriculo-ArthurGutierrezdeOliveira.pdf"
+                alt="Curriculo"
+                class="btn-curriculo"
+                download
+                >Ver Currículo</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </main>
 
-    <section id="sobre" class="sobre">
+    <!-- <section id="sobre" class="sobre">
       <div class="particulas2"></div>
       <div class="grid-sobre">
         <div class="grid-programing">
@@ -126,7 +176,7 @@
           </ul>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section id="projetos" class="projetos">
       <h2 class="projetos-titulo">Meus Projetos</h2>
@@ -213,6 +263,26 @@
         </div>
         <div class="projetos-card">
           <a
+            href="https://manfrota.com.br/login"
+            target="_blank"
+            class="link-projeto"
+          >
+            <img
+              src="./images/manfrota.jpeg"
+              alt="Projeto MANFROTA"
+              class="projetos-imagem"
+            />
+            <div class="caixa-textos-projetos">
+              <h3 class="info-projetos">MANFROTA</h3>
+              <p class="paragrafo-projetos">
+                Sistema MANFROTA, empresa Go4Digital, sistema para gestão de
+                frotas e postos de combustivel. (Fui parte disso)
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="projetos-card">
+          <a
             href="https://luiztavaresadvogado.com.br/home"
             target="_blank"
             class="link-projeto"
@@ -265,7 +335,7 @@
             &#169; 2025 Arthur Gutierrez — Todos os direitos reservados
           </div>
           <div class="footer-list">
-            <a href="#sobre" class="footer-link">Sobre</a>
+            <a href="#inicio" class="footer-link">Sobre</a>
             <a href="#projetos" class="footer-link">Projetos</a>
             <a href="#contatos" class="footer-link">Contatos</a>
           </div>
