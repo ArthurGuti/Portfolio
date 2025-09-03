@@ -15,6 +15,7 @@ html {
   --primaria: #006ef5;
   --secundaria: #0047cc;
   --texto-bold: #8fc1ff;
+  --primaria-clara: #1f9cff;
   --escuro: #1b1f24;
   --maisEscuro: #0a0d10;
   --claro: #ecf0f1;
@@ -598,6 +599,22 @@ body {
   color: var(--primaria);
 }
 
+.meu-elemento {
+  position: absolute;
+  top: 0.70rem;
+  left: 0.70rem;
+  border-radius: 9999px;
+  background-color: var(--primaria-clara);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding-left: 0.725rem;
+  padding-right: 0.725rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+}
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -659,7 +676,7 @@ body {
     border-radius: 0.75rem;
     width: 50vw;
     height: 50vh;
-    background: #e896207a;
+    background: #204fe87a;
     clip-path: circle(100px at 90% -33%);
     transition: 0.7s ease-out;
 

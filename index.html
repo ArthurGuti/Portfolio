@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gutierrez | Portfólio</title>
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="images/Logo Arthur Gutierrez (ofc svg).svg"
-    />
+    <link rel="icon" type="image/svg+xml" href="images/fav-ico.svg" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -26,7 +22,7 @@
       <div class="container-header">
         <div class="container-nav">
           <div class="container-menu-nav">
-            <a href="#inicio" class="logo">
+            <a href="#sobre" class="logo">
               <span class="svg-header">
                 <img
                   src="images/Logo Arthur Gutierrez (ofc svg).svg"
@@ -34,13 +30,12 @@
                   alt="Logo Arthur Gutierrez"
                 />
               </span>
-              <span class="span-header">Arthur Gutierrez</span>
             </a>
             <nav class="nav">
               <button class="hamburger"></button>
               <ul class="nav-list">
                 <li>
-                  <a href="#sobre" class="menu-link">Sobre</a>
+                  <a href="#inicio" class="menu-link">Sobre</a>
                 </li>
                 <li>
                   <a href="#projetos" class="menu-link">Projetos</a>
@@ -101,7 +96,7 @@
           </div>
         </div>
 
-        <div class="sobre-caixa">
+        <div id="sobre" class="sobre-caixa">
           <h2 class="sobre-titulo">
             Olá eu sou <id class="sobre-nome">Arthur Gutierrez</id>
           </h2>
@@ -147,106 +142,16 @@
       </div>
     </main>
 
-    <!-- <section id="sobre" class="sobre">
-      <div class="particulas2"></div>
-      <div class="grid-sobre">
-        <div class="grid-programing">
-          <img
-            src="./images/Programming.gif"
-            alt="Programando"
-            class="sobre-imagem"
-          />
-        </div>
-        <div class="sobre-caixa">
-          <h2 class="sobre-titulo">
-            Olá eu sou <id class="sobre-nome">Arthur Gutierrez</id>
-          </h2>
-          <p class="sobre-paragrafo">
-            Eu sou um desenvolvedor front-end focado em criar interfaces
-            modernas, funcionais e impactantes. Com domínio em React,
-            TypeScript, Tailwind e outras tecnologias web, entrego soluções que
-            unem performance e design. Transformo ideias em sites que
-            impressionam, resolvem problemas e geram resultados.
-          </p>
-
-          <ul class="sobre-info">
-            <li><span>Nome:</span> Arthur Gutierrez de Oliveira</li>
-            <li><span>Idade:</span> 18 anos</li>
-            <li><span>Cidade:</span> Santa Fé do Sul</li>
-          </ul>
-        </div>
-      </div>
-    </section> -->
-
     <section id="projetos" class="projetos">
       <h2 class="projetos-titulo">Meus Projetos</h2>
       <div class="projetos-caixa">
-        <div class="projetos-card">
-          <a
-            href="https://project3d-arthur.netlify.app"
-            target="_blank"
-            class="link-projeto"
-          >
-            <img
-              src="./images/projeto-3d.png"
-              alt="Projeto 3D"
-              class="projetos-imagem"
-            />
-            <div class="caixa-textos-projetos">
-              <h3 class="info-projetos">Projeto 3D</h3>
-              <p class="paragrafo-projetos">
-                Eu construi esse projeto em React com Three.js, gerando uma
-                experiëncia 3D com o usuário.
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="projetos-card">
-          <a
-            href="https://dev-flappybird.netlify.app"
-            target="_blank"
-            class="link-projeto"
-          >
-            <img
-              src="./images/flappy-bird.jfif"
-              alt="Projeto 3D"
-              class="projetos-imagem"
-            />
-            <div class="caixa-textos-projetos">
-              <h3 class="info-projetos">Game em site</h3>
-              <p class="paragrafo-projetos">
-                Eu construi um projeto que transforma um jogo em um site.
-                Progamando jogos em web site.
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="projetos-card">
-          <a
-            href="https://www.arthurgutierrez.com.br"
-            target="_blank"
-            class="link-projeto"
-          >
-            <img
-              src="./images/portfolio image.jfif"
-              alt="Projeto 3D"
-              class="projetos-imagem"
-            />
-            <div class="caixa-textos-projetos">
-              <h3 class="info-projetos">Portfólio</h3>
-              <p class="paragrafo-projetos">
-                HTML, CSS e JavaScript. Com o essencial, entrego impacto. Porque
-                saber fazer bem o básico já é ser diferente.
-              </p>
-            </div>
-          </a>
-        </div>
         <div class="projetos-card">
           <a
             href="https://geminissolucoes.com.br"
             target="_blank"
             class="link-projeto"
           >
+            <span class="meu-elemento">Sistema</span>
             <img
               src="./images/geminis.jfif"
               alt="Projeto Geminis Soluções"
@@ -267,6 +172,7 @@
             target="_blank"
             class="link-projeto"
           >
+            <span class="meu-elemento">Sistema</span>
             <img
               src="./images/manfrota.jpeg"
               alt="Projeto MANFROTA"
@@ -287,6 +193,7 @@
             target="_blank"
             class="link-projeto"
           >
+            <span class="meu-elemento">Sistema</span>
             <img
               src="./images/luiztavaresadvogado.jpeg"
               alt="Projeto Microsoft"
@@ -298,6 +205,88 @@
                 Descubra como um advogado pode impressionar online com um site
                 direto e elegante. (Fui parte disso)
               </p>
+            </div>
+          </a>
+        </div>
+        <div class="projetos-card">
+          <a
+            href="https://project3d-arthur.netlify.app"
+            target="_blank"
+            class="link-projeto"
+          >
+            <span class="meu-elemento">Website</span>
+            <img
+              src="./images/projeto-3d.png"
+              alt="Projeto 3D"
+              class="projetos-imagem"
+            />
+            <div class="caixa-textos-projetos">
+              <h3 class="info-projetos">Projeto 3D</h3>
+              <p class="paragrafo-projetos">
+                Eu construi esse projeto em React com Three.js, gerando uma
+                experiëncia 3D com o usuário.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="projetos-card">
+          <a
+            href="https://www.arthurgutierrez.com.br"
+            target="_blank"
+            class="link-projeto"
+          >
+            <span class="meu-elemento">Website</span>
+            <img
+              src="./images/portfolio image.jpeg"
+              alt="Projeto 3D"
+              class="projetos-imagem"
+            />
+            <div class="caixa-textos-projetos">
+              <h3 class="info-projetos">Portfólio</h3>
+              <p class="paragrafo-projetos">
+                HTML, CSS e JavaScript. Com o essencial, entrego impacto. Porque
+                saber fazer bem o básico já é ser diferente.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="projetos-card">
+          <a
+            href="https://dev-flappybird.netlify.app"
+            target="_blank"
+            class="link-projeto"
+          >
+            <span class="meu-elemento">Website</span>
+            <img
+              src="./images/flappy-bird.jfif"
+              alt="Projeto 3D"
+              class="projetos-imagem"
+            />
+            <div class="caixa-textos-projetos">
+              <h3 class="info-projetos">Game em site</h3>
+              <p class="paragrafo-projetos">
+                Eu construi um projeto que transforma um jogo em um site.
+                Progamando jogos em web site.
+              </p>
+
+              <!-- Continuar daqui -->
+              <div class="mt-5 flex items-center gap-4">
+                <a
+                  href="#contato"
+                  onclick="scrollToSection('contato'); return false;"
+                  role="button"
+                  class="text-sm font-medium text-brand-300 hover:text-brand-200 cursor-pointer"
+                  >Quero algo assim →</a
+                >
+                <button
+                  type="button"
+                  class="text-xs text-white/60 hover:text-white/80 underline underline-offset-4"
+                  aria-expanded="true"
+                  data-tech-target="#tech-hotel"
+                >
+                  Detalhes técnicos
+                </button>
+              </div>
             </div>
           </a>
         </div>
@@ -335,7 +324,7 @@
             &#169; 2025 Arthur Gutierrez — Todos os direitos reservados
           </div>
           <div class="footer-list">
-            <a href="#inicio" class="footer-link">Sobre</a>
+            <a href="#sobre" class="footer-link">Sobre</a>
             <a href="#projetos" class="footer-link">Projetos</a>
             <a href="#contatos" class="footer-link">Contatos</a>
           </div>
