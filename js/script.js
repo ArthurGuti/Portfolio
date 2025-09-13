@@ -39,9 +39,21 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("rolagem", window.scrollY > 0);
 });
 
-
 const hamburger = document.querySelector(".hamburger");
 const nav = document.querySelector(".nav");
 
-hamburger.addEventListener("click", () => 
-  nav.classList.toggle("active"));
+hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+
+document.addEventListener("DOMContentLoaded", function () {
+  const detalhesBtn = document.querySelector(
+    "button[data-tech-target='#tech-hotel']"
+  );
+  const techHotel = document.getElementById("tech-hotel");
+  if (detalhesBtn && techHotel) {
+    detalhesBtn.addEventListener("click", function () {
+      const isVisible = techHotel.style.display === "block";
+      techHotel.style.display = isVisible ? "none" : "block";
+    });
+    techHotel.style.display = "none";
+  }
+});
